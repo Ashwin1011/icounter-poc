@@ -1,0 +1,74 @@
+[
+  {
+    "id": "SVC-GW",
+    "name": "API Gateway",
+    "owner_team_id": "TEAM-PLAT",
+    "products": ["PROD-COM", "PROD-BILL", "PROD-SUP"],
+    "depends_on": ["SVC-ID"],
+    "dependents": ["SVC-PAY", "SVC-ORD", "SVC-SEARCH", "SVC-CUST", "SVC-NOTIFY"],
+    "runbook": "runbooks/identity-outage.md"
+  },
+  {
+    "id": "SVC-ID",
+    "name": "Identity Service",
+    "owner_team_id": "TEAM-ID",
+    "products": ["PROD-COM", "PROD-BILL", "PROD-SUP"],
+    "depends_on": [],
+    "dependents": ["SVC-GW", "SVC-PAY", "SVC-ORD", "SVC-CUST"],
+    "runbook": "runbooks/identity-outage.md"
+  },
+  {
+    "id": "SVC-PAY",
+    "name": "Payment Service",
+    "owner_team_id": "TEAM-PAY",
+    "products": ["PROD-BILL", "PROD-COM"],
+    "depends_on": ["SVC-ID", "SVC-GW", "SVC-ORD", "SVC-DATA"],
+    "dependents": ["SVC-ORD"],
+    "runbook": "runbooks/payment-database-failure.md"
+  },
+  {
+    "id": "SVC-ORD",
+    "name": "Order Service",
+    "owner_team_id": "TEAM-CX",
+    "products": ["PROD-COM"],
+    "depends_on": ["SVC-GW", "SVC-ID", "SVC-PAY", "SVC-CUST", "SVC-NOTIFY"],
+    "dependents": ["SVC-PAY"],
+    "runbook": "runbooks/incident-escalation.md"
+  },
+  {
+    "id": "SVC-NOTIFY",
+    "name": "Notification Service",
+    "owner_team_id": "TEAM-CX",
+    "products": ["PROD-COM", "PROD-SUP"],
+    "depends_on": ["SVC-GW", "SVC-CUST", "SVC-DATA"],
+    "dependents": ["SVC-ORD"],
+    "runbook": "runbooks/notification-backlog.md"
+  },
+  {
+    "id": "SVC-SEARCH",
+    "name": "Search Service",
+    "owner_team_id": "TEAM-PLAT",
+    "products": ["PROD-COM", "PROD-SUP"],
+    "depends_on": ["SVC-GW", "SVC-DATA"],
+    "dependents": [],
+    "runbook": "runbooks/search-indexing.md"
+  },
+  {
+    "id": "SVC-CUST",
+    "name": "Customer Profile Service",
+    "owner_team_id": "TEAM-CX",
+    "products": ["PROD-COM", "PROD-BILL", "PROD-SUP"],
+    "depends_on": ["SVC-ID", "SVC-DATA", "SVC-GW"],
+    "dependents": ["SVC-ORD", "SVC-NOTIFY"],
+    "runbook": "runbooks/incident-escalation.md"
+  },
+  {
+    "id": "SVC-DATA",
+    "name": "Data Platform",
+    "owner_team_id": "TEAM-PLAT",
+    "products": ["PROD-COM", "PROD-BILL", "PROD-SUP"],
+    "depends_on": [],
+    "dependents": ["SVC-PAY", "SVC-ORD", "SVC-ID", "SVC-NOTIFY", "SVC-CUST", "SVC-SEARCH"],
+    "runbook": "runbooks/incident-escalation.md"
+  }
+]

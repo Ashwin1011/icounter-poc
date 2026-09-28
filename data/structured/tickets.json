@@ -1,0 +1,74 @@
+[
+  {
+    "id": "TKT-2401",
+    "title": "Reduce Payment Service synchronous dependency calls",
+    "status": "in_progress",
+    "priority": "P1",
+    "service_id": "SVC-PAY",
+    "customer_id": null,
+    "project_id": "PROJ-MERCURY",
+    "assignee_id": "EMP-004",
+    "related_incident_id": "INC-1001",
+    "summary": "Follow-up from INC-1001: reduce sync calls during processor degradation and add processor-specific latency controls."
+  },
+  {
+    "id": "TKT-2402",
+    "title": "Add notification provider latency alerts",
+    "status": "in_progress",
+    "priority": "P2",
+    "service_id": "SVC-NOTIFY",
+    "customer_id": "CUST-GREENLEAF",
+    "project_id": "PROJ-APOLLO",
+    "assignee_id": "EMP-002",
+    "related_incident_id": "INC-1003",
+    "summary": "Apollo follow-up: provider-latency alerts and backlog-based autoscaling."
+  },
+  {
+    "id": "TKT-2403",
+    "title": "Certificate-chain validation in identity deploy pipeline",
+    "status": "in_progress",
+    "priority": "P1",
+    "service_id": "SVC-ID",
+    "customer_id": null,
+    "project_id": "PROJ-ORION",
+    "assignee_id": "EMP-006",
+    "related_incident_id": "INC-1002",
+    "summary": "Add certificate-validation step to Orion migration and deployment pipeline after INC-1002."
+  },
+  {
+    "id": "TKT-2404",
+    "title": "Indexing queue-age dashboards",
+    "status": "in_progress",
+    "priority": "P2",
+    "service_id": "SVC-SEARCH",
+    "customer_id": "CUST-REDWOOD",
+    "project_id": "PROJ-ATLAS",
+    "assignee_id": "EMP-008",
+    "related_incident_id": "INC-1004",
+    "summary": "Atlas follow-up: processing-time dashboards and queue-age alerts for the indexing pipeline."
+  },
+  {
+    "id": "TKT-2405",
+    "title": "Profile-event freshness gate for Apollo",
+    "status": "open",
+    "priority": "P2",
+    "service_id": "SVC-CUST",
+    "customer_id": null,
+    "project_id": "PROJ-APOLLO",
+    "assignee_id": "EMP-002",
+    "related_incident_id": "INC-1005",
+    "summary": "Require profile-event freshness below threshold before each Apollo migration stage."
+  },
+  {
+    "id": "TKT-2406",
+    "title": "Gateway certificate-chain validation checklist",
+    "status": "open",
+    "priority": "P1",
+    "service_id": "SVC-GW",
+    "customer_id": null,
+    "project_id": "PROJ-ATLAS",
+    "assignee_id": "EMP-010",
+    "related_incident_id": "INC-1006",
+    "summary": "Security Engineering added a certificate-chain validation requirement after the gateway renewal failure."
+  }
+]

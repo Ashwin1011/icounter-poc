@@ -1,0 +1,58 @@
+[
+  {
+    "service_id": "SVC-PAY",
+    "availability_target": 0.999,
+    "latency_p95_ms": 1200,
+    "error_rate_target": 0.002,
+    "notes": "Checkout authorization is a critical CommerceCloud and BillingPro path."
+  },
+  {
+    "service_id": "SVC-ID",
+    "availability_target": 0.9995,
+    "latency_p95_ms": 250,
+    "error_rate_target": 0.001,
+    "notes": "Shared authentication dependency. Conservative timeouts and metadata caching are required."
+  },
+  {
+    "service_id": "SVC-GW",
+    "availability_target": 0.9995,
+    "latency_p95_ms": 80,
+    "error_rate_target": 0.001,
+    "notes": "Fail closed on invalid tokens. Avoid cascading retries when Identity is slow."
+  },
+  {
+    "service_id": "SVC-ORD",
+    "availability_target": 0.999,
+    "latency_p95_ms": 800,
+    "error_rate_target": 0.003,
+    "notes": "Payment authorization is a critical synchronous dependency during checkout."
+  },
+  {
+    "service_id": "SVC-NOTIFY",
+    "availability_target": 0.995,
+    "latency_p95_ms": 5000,
+    "error_rate_target": 0.01,
+    "notes": "Asynchronous. Backlog growth is preferred over blocking upstream transactions."
+  },
+  {
+    "service_id": "SVC-SEARCH",
+    "availability_target": 0.995,
+    "latency_p95_ms": 400,
+    "error_rate_target": 0.01,
+    "notes": "Eventually consistent. Indexing lag is not the same as data loss."
+  },
+  {
+    "service_id": "SVC-CUST",
+    "availability_target": 0.999,
+    "latency_p95_ms": 300,
+    "error_rate_target": 0.003,
+    "notes": "Stale preferences must be labeled stale, not treated as deleted records."
+  },
+  {
+    "service_id": "SVC-DATA",
+    "availability_target": 0.99,
+    "latency_p95_ms": 60000,
+    "error_rate_target": 0.02,
+    "notes": "Asynchronous analytics path. Delayed data should be labeled stale."
+  }
+]

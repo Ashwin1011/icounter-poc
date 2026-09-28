@@ -1,0 +1,110 @@
+[
+  {
+    "id": "EMP-001",
+    "name": "Rohan Iyer",
+    "email": "rohan.iyer@nexora.example",
+    "title": "Manager, Customer Experience",
+    "team_id": "TEAM-CX",
+    "role": "manager",
+    "user_id": "rohan.iyer"
+  },
+  {
+    "id": "EMP-002",
+    "name": "Mei Wong",
+    "email": "mei.wong@nexora.example",
+    "title": "Technical Lead, Customer Experience",
+    "team_id": "TEAM-CX",
+    "role": "tech_lead",
+    "user_id": "mei.wong"
+  },
+  {
+    "id": "EMP-003",
+    "name": "Elena Rao",
+    "email": "elena.rao@nexora.example",
+    "title": "Manager, Payments Engineering",
+    "team_id": "TEAM-PAY",
+    "role": "manager",
+    "user_id": "elena.rao"
+  },
+  {
+    "id": "EMP-004",
+    "name": "Marcus Chen",
+    "email": "marcus.chen@nexora.example",
+    "title": "Technical Lead, Payments Engineering",
+    "team_id": "TEAM-PAY",
+    "role": "tech_lead",
+    "user_id": "marcus.chen"
+  },
+  {
+    "id": "EMP-005",
+    "name": "Priya Nair",
+    "email": "priya.nair@nexora.example",
+    "title": "Manager, Identity Platform",
+    "team_id": "TEAM-ID",
+    "role": "manager",
+    "user_id": "priya.nair"
+  },
+  {
+    "id": "EMP-006",
+    "name": "Daniel Ortiz",
+    "email": "daniel.ortiz@nexora.example",
+    "title": "Technical Lead, Identity Platform",
+    "team_id": "TEAM-ID",
+    "role": "tech_lead",
+    "user_id": "daniel.ortiz"
+  },
+  {
+    "id": "EMP-007",
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@nexora.example",
+    "title": "Manager, Core Platform",
+    "team_id": "TEAM-PLAT",
+    "role": "manager",
+    "user_id": "arjun.mehta"
+  },
+  {
+    "id": "EMP-008",
+    "name": "Sofia Alvarez",
+    "email": "sofia.alvarez@nexora.example",
+    "title": "Technical Lead, Core Platform",
+    "team_id": "TEAM-PLAT",
+    "role": "tech_lead",
+    "user_id": "sofia.alvarez"
+  },
+  {
+    "id": "EMP-009",
+    "name": "Michael Grant",
+    "email": "michael.grant@nexora.example",
+    "title": "Manager, Security Engineering",
+    "team_id": "TEAM-SEC",
+    "role": "manager",
+    "user_id": "michael.grant"
+  },
+  {
+    "id": "EMP-010",
+    "name": "Aisha Patel",
+    "email": "aisha.patel@nexora.example",
+    "title": "Technical Lead, Security Engineering",
+    "team_id": "TEAM-SEC",
+    "role": "tech_lead",
+    "user_id": "aisha.patel"
+  },
+  {
+    "id": "EMP-011",
+    "name": "Hannah Brooks",
+    "email": "hannah.brooks@nexora.example",
+    "title": "Manager, Site Reliability Engineering",
+    "team_id": "TEAM-SRE",
+    "role": "manager",
+    "user_id": "hannah.brooks"
+  },
+  {
+    "id": "EMP-012",
+    "name": "Sameer Kulkarni",
+    "email": "sameer.kulkarni@nexora.example",
+    "title": "Technical Lead, Site Reliability Engineering",
+    "team_id": "TEAM-SRE",
+    "role": "tech_lead",
+    "user_id": "sameer.kulkarni"
+  }
+]

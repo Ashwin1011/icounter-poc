@@ -1,0 +1,17 @@
+[
+  {
+    "id": "POL-INC",
+    "title": "Incident Management",
+    "path": "policies/incident-management.md"
+  },
+  {
+    "id": "POL-PROD-ACCESS",
+    "title": "Production Access",
+    "path": "policies/production-access.md"
+  },
+  {
+    "id": "POL-CUST-DATA",
+    "title": "Customer Data Handling",
+    "path": "policies/customer-data.md"
+  }
+]

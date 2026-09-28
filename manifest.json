@@ -1,0 +1,20 @@
+{
+  "name": "Nexora Enterprise Knowledge Base",
+  "version": "1.0",
+  "description": "Fictional enterprise knowledge base for the Staff AI Engineer agent assignment.",
+  "document_count": 47,
+  "categories": [
+    "architecture",
+    "company",
+    "customers",
+    "incidents",
+    "policies",
+    "products",
+    "projects",
+    "runbooks",
+    "security",
+    "services",
+    "teams"
+  ],
+  "canonical_entities": "company/entity-catalog.md"
+}

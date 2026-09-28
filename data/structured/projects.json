@@ -1,0 +1,50 @@
+[
+  {
+    "id": "PROJ-APOLLO",
+    "name": "Project Apollo",
+    "status": "in_progress",
+    "executive_sponsor_id": "EMP-001",
+    "technical_owner_id": "EMP-002",
+    "primary_team_id": "TEAM-CX",
+    "services": ["SVC-NOTIFY", "SVC-CUST", "SVC-GW"],
+    "depends_on_projects": ["PROJ-ATLAS"],
+    "depends_on_services": ["SVC-ID"],
+    "summary": "Customer-notification modernization. Migrates legacy notification workflows to Notification Service and standardizes communication preferences through Customer Profile Service."
+  },
+  {
+    "id": "PROJ-ORION",
+    "name": "Project Orion",
+    "status": "in_progress",
+    "executive_sponsor_id": "EMP-005",
+    "technical_owner_id": "EMP-006",
+    "primary_team_id": "TEAM-ID",
+    "services": ["SVC-ID", "SVC-GW"],
+    "depends_on_projects": [],
+    "depends_on_services": ["SVC-GW"],
+    "summary": "Migrates legacy OAuth clients to Identity Service and standardizes token validation."
+  },
+  {
+    "id": "PROJ-ATLAS",
+    "name": "Project Atlas",
+    "status": "in_progress",
+    "executive_sponsor_id": "EMP-007",
+    "technical_owner_id": "EMP-008",
+    "primary_team_id": "TEAM-PLAT",
+    "services": ["SVC-GW", "SVC-SEARCH", "SVC-PAY", "SVC-ORD", "SVC-NOTIFY", "SVC-CUST"],
+    "depends_on_projects": [],
+    "depends_on_services": [],
+    "summary": "Standardizes observability: correlation IDs, service-level metrics, distributed tracing, and common dashboards."
+  },
+  {
+    "id": "PROJ-MERCURY",
+    "name": "Project Mercury",
+    "status": "in_progress",
+    "executive_sponsor_id": "EMP-003",
+    "technical_owner_id": "EMP-004",
+    "primary_team_id": "TEAM-PAY",
+    "services": ["SVC-PAY", "SVC-GW", "SVC-ID", "SVC-ORD"],
+    "depends_on_projects": ["PROJ-ATLAS"],
+    "depends_on_services": [],
+    "summary": "Payment-performance initiative to reduce checkout authorization latency by 25% without increasing error rate."
+  }
+]

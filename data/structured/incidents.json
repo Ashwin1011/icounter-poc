@@ -1,0 +1,74 @@
+[
+  {
+    "id": "INC-1001",
+    "title": "Payment authorization latency",
+    "date": "2026-06-14",
+    "severity": "Sev-1",
+    "service_id": "SVC-PAY",
+    "owner_team_id": "TEAM-PAY",
+    "commander_id": "EMP-012",
+    "customers": ["CUST-NORTHSTAR", "CUST-BLUEPEAK"],
+    "related_project_id": "PROJ-MERCURY",
+    "summary": "Payment authorization p95 latency increased from 1.2s to 4.8s for 47 minutes after a processor-routing change amplified synchronous dependency calls."
+  },
+  {
+    "id": "INC-1002",
+    "title": "Identity login degradation",
+    "date": "2026-07-02",
+    "severity": "Sev-1",
+    "service_id": "SVC-ID",
+    "owner_team_id": "TEAM-ID",
+    "commander_id": "EMP-011",
+    "customers": [],
+    "related_project_id": "PROJ-ORION",
+    "summary": "Login and token validation experienced intermittent failures for 31 minutes after a certificate renewal introduced an invalid trust-chain configuration."
+  },
+  {
+    "id": "INC-1003",
+    "title": "Notification backlog",
+    "date": "2026-07-19",
+    "severity": "Sev-2",
+    "service_id": "SVC-NOTIFY",
+    "owner_team_id": "TEAM-CX",
+    "commander_id": "EMP-002",
+    "customers": ["CUST-GREENLEAF"],
+    "related_project_id": "PROJ-APOLLO",
+    "summary": "Notification delivery backlog grew during a third-party provider slowdown because workers did not scale quickly enough."
+  },
+  {
+    "id": "INC-1004",
+    "title": "Search indexing delay",
+    "date": "2026-08-05",
+    "severity": "Sev-2",
+    "service_id": "SVC-SEARCH",
+    "owner_team_id": "TEAM-PLAT",
+    "commander_id": "EMP-008",
+    "customers": ["CUST-REDWOOD"],
+    "related_project_id": "PROJ-ATLAS",
+    "summary": "Search indexing lag exceeded four hours after a worker regression increased document processing time."
+  },
+  {
+    "id": "INC-1005",
+    "title": "Customer profile data lag",
+    "date": "2026-08-23",
+    "severity": "Sev-2",
+    "service_id": "SVC-CUST",
+    "owner_team_id": "TEAM-CX",
+    "commander_id": "EMP-001",
+    "customers": [],
+    "related_project_id": "PROJ-APOLLO",
+    "summary": "Profile synchronization from Data Platform was delayed for about 68 minutes after a stuck consumer group."
+  },
+  {
+    "id": "INC-1006",
+    "title": "API Gateway certificate renewal failure",
+    "date": "2026-09-03",
+    "severity": "Sev-1",
+    "service_id": "SVC-GW",
+    "owner_team_id": "TEAM-PLAT",
+    "commander_id": "EMP-012",
+    "customers": [],
+    "related_project_id": "PROJ-ATLAS",
+    "summary": "A production certificate renewal failed for one API Gateway cluster, causing TLS handshake failures for a subset of CommerceCloud and BillingPro traffic."
+  }
+]

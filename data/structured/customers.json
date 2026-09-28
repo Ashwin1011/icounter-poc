@@ -1,0 +1,34 @@
+[
+  {
+    "id": "CUST-NORTHSTAR",
+    "name": "Northstar Retail",
+    "products": ["PROD-COM"],
+    "services": ["SVC-GW", "SVC-ID", "SVC-ORD", "SVC-PAY", "SVC-CUST", "SVC-NOTIFY"],
+    "incidents": ["INC-1001"],
+    "notes": "Sensitive to checkout latency. Payment authorization incidents are high business impact."
+  },
+  {
+    "id": "CUST-BLUEPEAK",
+    "name": "BluePeak Travel",
+    "products": ["PROD-BILL"],
+    "services": ["SVC-GW", "SVC-ID", "SVC-PAY", "SVC-DATA"],
+    "incidents": ["INC-1001"],
+    "notes": "Billing data freshness matters for finance reporting. Delayed Data Platform ingestion may affect dashboards without affecting authorization."
+  },
+  {
+    "id": "CUST-GREENLEAF",
+    "name": "GreenLeaf Health",
+    "products": ["PROD-SUP"],
+    "services": ["SVC-ID", "SVC-CUST", "SVC-NOTIFY", "SVC-SEARCH"],
+    "incidents": ["INC-1003"],
+    "notes": "Customer communications must respect stored preferences. Notification delays are operationally important."
+  },
+  {
+    "id": "CUST-REDWOOD",
+    "name": "Redwood Outfitters",
+    "products": ["PROD-COM"],
+    "services": ["SVC-GW", "SVC-ID", "SVC-ORD", "SVC-PAY", "SVC-SEARCH"],
+    "incidents": ["INC-1004"],
+    "notes": "Search indexing freshness matters for product discovery. Checkout availability is a higher priority than search freshness."
+  }
+]

@@ -1,0 +1,10 @@
+[project]
+name = "nexora-assistant"
+version = "1.0.0"
+description = "Nexora Assistant — internal operations copilot"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["eval"]
+asyncio_mode = "auto"

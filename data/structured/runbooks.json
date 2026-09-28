@@ -1,0 +1,32 @@
+[
+  {
+    "id": "RB-PAY-DEP",
+    "title": "Payment Service Dependency Failure",
+    "path": "runbooks/payment-database-failure.md",
+    "service_ids": ["SVC-PAY"]
+  },
+  {
+    "id": "RB-ID-OUTAGE",
+    "title": "Identity Service Outage",
+    "path": "runbooks/identity-outage.md",
+    "service_ids": ["SVC-ID", "SVC-GW"]
+  },
+  {
+    "id": "RB-NOTIFY",
+    "title": "Notification Backlog",
+    "path": "runbooks/notification-backlog.md",
+    "service_ids": ["SVC-NOTIFY"]
+  },
+  {
+    "id": "RB-SEARCH",
+    "title": "Search Indexing Lag",
+    "path": "runbooks/search-indexing.md",
+    "service_ids": ["SVC-SEARCH"]
+  },
+  {
+    "id": "RB-ESC",
+    "title": "Incident Escalation",
+    "path": "runbooks/incident-escalation.md",
+    "service_ids": ["SVC-ORD", "SVC-CUST", "SVC-DATA", "SVC-PAY", "SVC-ID"]
+  }
+]

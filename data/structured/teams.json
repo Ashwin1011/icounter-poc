@@ -1,0 +1,68 @@
+[
+  {
+    "id": "TEAM-PAY",
+    "name": "Payments Engineering",
+    "manager_id": "EMP-003",
+    "tech_lead_id": "EMP-004",
+    "oncall_rotation": "PAY-PRIMARY",
+    "owns_services": ["SVC-PAY"],
+    "owns_products": ["PROD-BILL", "PROD-COM"],
+    "owns_projects": ["PROJ-MERCURY"],
+    "collaborates_with": ["TEAM-SRE", "TEAM-SEC"]
+  },
+  {
+    "id": "TEAM-ID",
+    "name": "Identity Platform",
+    "manager_id": "EMP-005",
+    "tech_lead_id": "EMP-006",
+    "oncall_rotation": "IDENTITY-PRIMARY",
+    "owns_services": ["SVC-ID"],
+    "owns_products": [],
+    "owns_projects": ["PROJ-ORION"],
+    "collaborates_with": ["TEAM-SEC", "TEAM-PLAT"]
+  },
+  {
+    "id": "TEAM-PLAT",
+    "name": "Core Platform",
+    "manager_id": "EMP-007",
+    "tech_lead_id": "EMP-008",
+    "oncall_rotation": "PLATFORM-PRIMARY",
+    "owns_services": ["SVC-GW", "SVC-SEARCH", "SVC-DATA"],
+    "owns_products": [],
+    "owns_projects": ["PROJ-ATLAS"],
+    "collaborates_with": ["TEAM-SRE"]
+  },
+  {
+    "id": "TEAM-CX",
+    "name": "Customer Experience",
+    "manager_id": "EMP-001",
+    "tech_lead_id": "EMP-002",
+    "oncall_rotation": "CX-PRIMARY",
+    "owns_services": ["SVC-ORD", "SVC-NOTIFY", "SVC-CUST"],
+    "owns_products": ["PROD-SUP"],
+    "owns_projects": ["PROJ-APOLLO"],
+    "collaborates_with": ["TEAM-SRE"]
+  },
+  {
+    "id": "TEAM-SRE",
+    "name": "Site Reliability Engineering",
+    "manager_id": "EMP-011",
+    "tech_lead_id": "EMP-012",
+    "oncall_rotation": "SRE-PRIMARY",
+    "owns_services": [],
+    "owns_products": [],
+    "owns_projects": [],
+    "collaborates_with": ["TEAM-PAY", "TEAM-PLAT", "TEAM-CX", "TEAM-ID"]
+  },
+  {
+    "id": "TEAM-SEC",
+    "name": "Security Engineering",
+    "manager_id": "EMP-009",
+    "tech_lead_id": "EMP-010",
+    "oncall_rotation": "SEC-PRIMARY",
+    "owns_services": [],
+    "owns_products": [],
+    "owns_projects": [],
+    "collaborates_with": ["TEAM-ID", "TEAM-PAY"]
+  }
+]

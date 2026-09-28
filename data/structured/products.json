@@ -1,0 +1,23 @@
+[
+  {
+    "id": "PROD-COM",
+    "name": "CommerceCloud",
+    "services": ["SVC-GW", "SVC-ID", "SVC-ORD", "SVC-PAY", "SVC-CUST", "SVC-NOTIFY", "SVC-SEARCH"],
+    "customers": ["CUST-NORTHSTAR", "CUST-REDWOOD"],
+    "summary": "Product catalog, checkout, order management, and customer-facing commerce."
+  },
+  {
+    "id": "PROD-BILL",
+    "name": "BillingPro",
+    "services": ["SVC-GW", "SVC-ID", "SVC-PAY", "SVC-DATA"],
+    "customers": ["CUST-BLUEPEAK"],
+    "summary": "Subscriptions, invoices, payment collection, and revenue reporting."
+  },
+  {
+    "id": "PROD-SUP",
+    "name": "SupportHub",
+    "services": ["SVC-GW", "SVC-ID", "SVC-CUST", "SVC-NOTIFY", "SVC-SEARCH"],
+    "customers": ["CUST-GREENLEAF"],
+    "summary": "Support-agent workflows, customer ticketing, internal notifications, and searchable knowledge."
+  }
+]

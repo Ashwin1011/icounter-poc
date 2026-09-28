@@ -1,0 +1,83 @@
+[
+  {
+    "id": "INFRA-PAY-DB",
+    "name": "pay-db-prod",
+    "kind": "postgres",
+    "service_ids": ["SVC-PAY"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Primary Payment Service datastore. Stores tokenized payment references only."
+  },
+  {
+    "id": "INFRA-PAY-ADAPTER",
+    "name": "pay-processor-adapter",
+    "kind": "application",
+    "service_ids": ["SVC-PAY"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Routes authorization requests to external processors."
+  },
+  {
+    "id": "INFRA-ID-CLUSTER-A",
+    "name": "id-auth-cluster-a",
+    "kind": "k8s-cluster",
+    "service_ids": ["SVC-ID"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Identity authentication cluster. Certificate rotation is a high-risk change."
+  },
+  {
+    "id": "INFRA-ID-DB",
+    "name": "id-meta-db",
+    "kind": "postgres",
+    "service_ids": ["SVC-ID"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Identity metadata datastore."
+  },
+  {
+    "id": "INFRA-GW-EDGE",
+    "name": "gw-edge-prod",
+    "kind": "edge",
+    "service_ids": ["SVC-GW"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "API Gateway TLS termination and routing. Multiple clusters; one was affected in INC-1006."
+  },
+  {
+    "id": "INFRA-NOTIFY-QUEUE",
+    "name": "notify-queue-prod",
+    "kind": "queue",
+    "service_ids": ["SVC-NOTIFY"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Notification delivery queue. Backlog age is the primary health signal."
+  },
+  {
+    "id": "INFRA-SEARCH-INDEX",
+    "name": "search-index-prod",
+    "kind": "search-index",
+    "service_ids": ["SVC-SEARCH"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Search indexing workers and index store. Eventually consistent."
+  },
+  {
+    "id": "INFRA-DATA-BUS",
+    "name": "data-platform-bus",
+    "kind": "event-bus",
+    "service_ids": ["SVC-DATA", "SVC-PAY", "SVC-ORD", "SVC-ID", "SVC-NOTIFY", "SVC-CUST"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Asynchronous operational event stream used by Data Platform consumers."
+  },
+  {
+    "id": "INFRA-PROFILE-DB",
+    "name": "profile-db-prod",
+    "kind": "postgres",
+    "service_ids": ["SVC-CUST"],
+    "environment": "production",
+    "status": "healthy",
+    "notes": "Customer preference and profile source of truth."
+  }
+]

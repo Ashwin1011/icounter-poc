@@ -1,0 +1,9 @@
+fastmcp>=2.10.0
+neo4j>=5.27.0
+qdrant-client>=1.12.0
+fastembed>=0.5.1
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+httpx>=0.28.0
+uvicorn>=0.34.0
+starlette>=0.41.0
